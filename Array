@@ -1,0 +1,29 @@
+#include <stdio.h>
+void main()
+{
+  int arr1[3][3],i,j,d,sum;
+
+       printf("input elements :\n");
+  for(i=0;i<3;i++)
+  {
+      for(j=0;j<3;j++)
+      {
+	      printf("[%d],[%d] : ",i,j);
+	      scanf("%d",&arr1[i][j]);
+      }
+  }  
+  for(i=0;i<3;i++)
+  {
+      printf("\n");
+      for(j=0;j<3;j++)
+
+           printf("%d\t",arr1[i][j]);
+
+  }
+   for(d = 0; d < i; d++)
+  	     {
+   	         sum = sum + arr1[d][d];
+  	     }
+
+ 	     printf("\n The Sum of Diagonals is =  %d", sum );
+}
